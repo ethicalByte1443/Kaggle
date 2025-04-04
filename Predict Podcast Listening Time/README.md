@@ -7,6 +7,29 @@
 
 ---
 
+
+## 🧪 My Approach
+
+1. **🔄 Data Loading**  
+   Loaded both training and test datasets using `pandas`.
+
+2. **🧼 Handling Missing Values**  
+   Used `fillna()` to fill missing values in the dataset with **column-wise mean values**.
+
+3. **🧠 Categorical Encoding**  
+   Applied encoding techniques (like Label Encoding or One-Hot Encoding) to convert categorical columns into numerical format suitable for model training.
+
+4. **🧠 Ensemble Learning Models**  
+   Utilized **Ensemble Learning** with the following models:
+   - 🎯 **XGBoost**: Gradient boosting framework optimized for speed and performance.
+   - ⚡ **LightGBM**: Fast, distributed, high-performance gradient boosting framework based on decision tree algorithms.
+   - 🐱 **CatBoost**: Gradient boosting library that handles categorical features automatically and reduces the need for extensive preprocessing.
+
+5. **🧮 Model Averaging / Blending**  
+   Final predictions were obtained by **blending outputs** of the three models (e.g., simple average or weighted average) to improve generalization and reduce overfitting.
+
+---
+
 ## 📝 Evaluation Metric
 
 ### 📉 Root Mean Squared Error (RMSE)
